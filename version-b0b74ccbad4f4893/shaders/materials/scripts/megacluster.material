@@ -1,0 +1,51 @@
+
+
+
+material MegaCluster_Low
+{
+	lod_distances 320.0
+	technique lod1
+	{
+		pass
+		{
+			ambient 0.5 0.5 0.5
+            diffuse 1.0 1.0 1.0
+			// mimic current wood shader limitation
+			max_lights 2
+		
+			texture_unit
+			{
+				tex_coord_set 0
+				texture textures/clustermips.dds
+		        filtering trilinear
+		        tex_address_mode clamp
+		        
+		        colour_op_ex source1 src_texture src_texture
+		        alpha_op_ex source1 src_texture src_texture
+			}
+
+			texture_unit
+			{
+				tex_coord_set 1
+				texture textures/clustermips.dds
+		        filtering trilinear
+		        tex_address_mode clamp
+		        
+		        colour_op_ex blend_current_alpha src_current src_texture
+		        //colour_op replace
+			}
+
+			texture_unit
+			{
+				tex_coord_set 1
+				texture textures/clustermips.dds
+		        filtering trilinear
+		        
+		        colour_op_ex modulate src_current src_diffuse
+			}
+
+			
+		}
+	}
+
+}
