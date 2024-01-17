@@ -1,7 +1,6 @@
 local plr = game.Players:CreateLocalPlayer(0)
-plr.Name = "nilequal"
 game:GetService("Visit")
-game:GetService("RunService"):run()
+game:GetService("RunService"):Run()
 plr:LoadCharacter()
 print ("Play in the old studio with this.")
 while true do wait(0.001)
