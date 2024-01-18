@@ -15,3 +15,5 @@
 # notes
 - be aware of that when hosting a server online globally you are prone to doxxing as joiners require the serverid (which is basically an ip address) to join, using a VPN is recommended. 
 - trustcheck is fully patched, meaning people can use any image from any website including porn and gore sites. this will be reverted soon.
+
+![thing](https://github.com/nullequal/rblx11/blob/main/thing.jpg)
