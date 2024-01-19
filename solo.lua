@@ -1,4 +1,5 @@
 local plr = game.Players:CreateLocalPlayer(0)
+plr.Name = "nilequal"
 game:GetService("Visit")
 game:GetService("RunService"):Run()
 plr:LoadCharacter()
